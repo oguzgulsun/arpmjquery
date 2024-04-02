@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/second', function () {
+    return view('second');
+});
+
+Route::get('/third', function () {
+    return view('third');
+});
