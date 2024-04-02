@@ -32,6 +32,7 @@ class EventController extends Controller
     $id = $request->id;
     $event = Event::find($id);
     $event->status=0;
+    $event->removed_at =date('Y-m-d H:i:s');
     $event->save();
 
     return;
